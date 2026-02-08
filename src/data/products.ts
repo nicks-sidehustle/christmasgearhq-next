@@ -26,7 +26,7 @@ export const products: Product[] = [
     slug: "krinner-tree-genie-xxl",
     title: "Krinner Christmas Tree Genie XXL - Green Tree Stand",
     category: "tree-stands",
-    price: 89.99,
+    price: 135.99,
     rating: 4.6,
     reviewCount: 8500,
     image: "https://m.media-amazon.com/images/I/61qnYkHyHOL._AC_SL1500_.jpg",
