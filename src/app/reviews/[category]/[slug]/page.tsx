@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ProductPageProps) {
   }
 
   return {
-    title: `${product.title} Review | DeskGearHQ`,
+    title: `${product.title} Review | ChristmasGearHQ`,
     description: product.overview,
   };
 }
@@ -184,7 +184,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
           {/* Buy CTA */}
           <div className="bg-gray-900 rounded-xl p-6 text-center mb-12">
-            <p className="text-gray-400 mb-2">Ready to upgrade your desk setup?</p>
+            <p className="text-gray-400 mb-2">Ready to make your holidays magical?</p>
             <a
               href={product.amazonLink}
               target="_blank"

@@ -49,7 +49,7 @@ export default async function HomePage() {
               Top Rated Products
             </h2>
             <p className="text-sm text-gray-500">
-              Highest-rated desk gear across all categories
+              Highest-rated holiday gear across all categories
             </p>
           </div>
           <Suspense fallback={<div>Loading...</div>}>

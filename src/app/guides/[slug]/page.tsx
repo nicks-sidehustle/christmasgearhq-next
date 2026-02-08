@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: GuidePageProps) {
   }
 
   return {
-    title: `${guide.title} | DeskGearHQ`,
+    title: `${guide.title} | ChristmasGearHQ`,
     description: guide.description,
   };
 }

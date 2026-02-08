@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
         email,
         listIds: [parseInt(BREVO_LIST_ID)],
         attributes: {
-          SOURCE: source || "deskgearhq",
+          SOURCE: source || "christmasgearhq",
         },
         updateEnabled: true,
       }),
@@ -63,32 +63,32 @@ export async function POST(request: NextRequest) {
           "api-key": BREVO_API_KEY,
         },
         body: JSON.stringify({
-          sender: { name: "DeskGearHQ", email: "hello@deskgearhq.com" },
+          sender: { name: "ChristmasGearHQ", email: "hello@christmasgearhq.com" },
           to: [{ email }],
-          subject: "Welcome to DeskGearHQ! 🖥️",
+          subject: "Welcome to ChristmasGearHQ! 🎄",
           htmlContent: `
             <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-              <h1 style="color: #2563eb;">Welcome to DeskGearHQ!</h1>
+              <h1 style="color: #dc2626;">Welcome to ChristmasGearHQ! 🎄</h1>
               <p>Thanks for subscribing! You'll now get:</p>
               <ul>
                 <li>🎯 Weekly top picks and price drops</li>
-                <li>📚 New buying guides and product comparisons</li>
-                <li>💡 Desk setup tips and inspiration</li>
+                <li>📚 New buying guides for holiday decorating</li>
+                <li>✨ Seasonal tips and inspiration</li>
               </ul>
               <p>In the meantime, check out our latest guides:</p>
               <p>
-                <a href="https://deskgearhq.com/guides/best-standing-desks-2026" style="color: #2563eb;">
-                  Best Standing Desks 2026 →
+                <a href="https://christmasgearhq.com/guides/best-christmas-tree-stands-2026" style="color: #dc2626;">
+                  Best Christmas Tree Stands 2026 →
                 </a>
               </p>
               <p>
-                <a href="https://deskgearhq.com/guides/best-desk-cable-management-2026" style="color: #2563eb;">
-                  Best Cable Management 2026 →
+                <a href="https://christmasgearhq.com/guides/best-christmas-lights-2026" style="color: #dc2626;">
+                  Best Christmas Lights 2026 →
                 </a>
               </p>
               <p style="margin-top: 24px; color: #666; font-size: 14px;">
-                Happy organizing!<br/>
-                The DeskGearHQ Team
+                Happy decorating!<br/>
+                The ChristmasGearHQ Team
               </p>
             </div>
           `,

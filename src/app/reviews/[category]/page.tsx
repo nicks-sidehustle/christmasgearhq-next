@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   }
 
   return {
-    title: `${cat.name} Reviews | DeskGearHQ`,
+    title: `${cat.name} Reviews | ChristmasGearHQ`,
     description: cat.description,
   };
 }

@@ -23,7 +23,7 @@ export function CategoryBrowse({ categories }: CategoryBrowseProps) {
             Browse by Category
           </h2>
           <p className="text-sm text-gray-500">
-            Find the perfect gear for your desk setup
+            Find the perfect gear for your holiday decorating
           </p>
         </div>
 

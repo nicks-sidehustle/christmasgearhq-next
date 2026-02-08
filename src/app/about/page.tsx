@@ -2,8 +2,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { siteConfig } from "@/config/site";
 
 export const metadata = {
-  title: "About Us",
-  description: "Learn about DeskGearHQ and how we help you find the best desk accessories.",
+  title: `About Us | ${siteConfig.name}`,
+  description: `Learn about ${siteConfig.name} and how we help you find the best Christmas decorations and holiday gear.`,
 };
 
 export default function AboutPage() {
@@ -18,12 +18,12 @@ export default function AboutPage() {
 
           <div className="prose prose-gray max-w-none">
             <p className="text-lg text-gray-600 mb-6">
-              We're desk setup enthusiasts who got tired of sifting through thousands of Amazon reviews and sponsored "best of" lists to find quality gear.
+              We're holiday decorating enthusiasts who got tired of sifting through thousands of Amazon reviews and sponsored "best of" lists to find quality Christmas gear.
             </p>
 
             <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Our Mission</h2>
             <p className="text-gray-600 mb-4">
-              {siteConfig.name} aggregates expert reviews and real user feedback to help you find the best desk accessories, monitor stands, cable management solutions, and office organization products.
+              {siteConfig.name} aggregates expert reviews and real user feedback to help you find the best Christmas decorations, tree stands, lights, and holiday storage solutions.
             </p>
             <p className="text-gray-600 mb-4">
               We don't test products in a lab. Instead, we analyze reviews from trusted sources, compare ratings across platforms, and distill everything into actionable recommendations.
@@ -48,8 +48,8 @@ export default function AboutPage() {
             <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Contact</h2>
             <p className="text-gray-600">
               Questions or suggestions? Reach out at{" "}
-              <a href="mailto:hello@deskgearhq.com" className="text-blue-600 hover:underline">
-                hello@deskgearhq.com
+              <a href={`mailto:hello@christmasgearhq.com`} className="text-red-600 hover:underline">
+                hello@christmasgearhq.com
               </a>
             </p>
           </div>

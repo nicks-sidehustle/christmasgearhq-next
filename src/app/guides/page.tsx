@@ -4,9 +4,11 @@ import Image from "next/image";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { getAllGuides } from "@/data/guides";
 
+import { siteConfig } from "@/config/site";
+
 export const metadata = {
-  title: "Buying Guides | DeskGearHQ",
-  description: "Expert buying guides to help you find the best desk gear for your setup.",
+  title: `Buying Guides | ${siteConfig.name}`,
+  description: "Expert buying guides to help you find the best Christmas decorations and holiday gear.",
 };
 
 export default function GuidesPage() {

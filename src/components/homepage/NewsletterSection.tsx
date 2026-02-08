@@ -21,7 +21,7 @@ export function NewsletterSection() {
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "deskgearhq" }),
+        body: JSON.stringify({ email, source: "christmasgearhq" }),
       });
 
       const data = await response.json();
@@ -41,14 +41,14 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="py-12 bg-blue-600">
+    <section className="py-12 bg-red-600">
       <div className="container mx-auto px-4 max-w-xl text-center">
-        <Mail className="w-10 h-10 text-blue-200 mx-auto mb-4" />
+        <Mail className="w-10 h-10 text-red-200 mx-auto mb-4" />
         <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
-          Get the Best Desk Gear Deals
+          Get Holiday Deals & Tips 🎄
         </h2>
-        <p className="text-blue-100 mb-6">
-          Weekly roundup of top picks, price drops, and new product launches. No spam.
+        <p className="text-red-100 mb-6">
+          Weekly roundup of best decorations, price drops, and seasonal tips. No spam.
         </p>
 
         {status === "success" ? (
@@ -64,12 +64,12 @@ export function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 h-11 bg-white/10 border-white/20 text-white placeholder:text-blue-200"
+              className="flex-1 h-11 bg-white/10 border-white/20 text-white placeholder:text-red-200"
             />
             <Button
               type="submit"
               disabled={status === "loading"}
-              className="h-11 bg-white text-blue-600 hover:bg-blue-50 font-medium"
+              className="h-11 bg-white text-red-600 hover:bg-red-50 font-medium"
             >
               {status === "loading" ? (
                 <Loader2 className="w-4 h-4 animate-spin" />
@@ -81,11 +81,11 @@ export function NewsletterSection() {
         )}
 
         {status === "error" && (
-          <p className="text-red-200 text-sm mt-2">{message}</p>
+          <p className="text-yellow-200 text-sm mt-2">{message}</p>
         )}
 
-        <p className="text-xs text-blue-200 mt-4">
-          Join 500+ desk setup enthusiasts
+        <p className="text-xs text-red-200 mt-4">
+          Join holiday decorating enthusiasts
         </p>
       </div>
     </section>

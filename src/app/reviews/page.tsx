@@ -5,8 +5,8 @@ import { categories } from "@/config/site";
 import { getProductsByCategory } from "@/lib/content/products";
 
 export const metadata = {
-  title: "Product Reviews | DeskGearHQ",
-  description: "Browse our collection of expert desk gear reviews across all categories.",
+  title: "Product Reviews | ChristmasGearHQ",
+  description: "Browse our collection of expert Christmas decoration reviews across all categories.",
 };
 
 export default function ReviewsPage() {
@@ -24,7 +24,7 @@ export default function ReviewsPage() {
             Product Reviews
           </h1>
           <p className="text-gray-600 mb-8">
-            Browse our curated collection of the best desk gear, organized by category.
+            Browse our curated collection of the best Christmas gear, organized by category.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
