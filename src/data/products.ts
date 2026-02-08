@@ -147,6 +147,131 @@ export const products: Product[] = [
     featured: true
   },
 
+  // ORNAMENTS - VERIFIED 2026-02-08
+  {
+    slug: "emerald-green-christmas-balls-24pc",
+    title: "Emerald Green 2.5\" Christmas Balls Shatterproof Ornaments - 24pcs",
+    category: "ornaments",
+    price: 13.97,
+    rating: 4.2,
+    reviewCount: 13081,
+    image: "https://m.media-amazon.com/images/I/71+M-JmgjjL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B07CJ2RWFQ?tag=nsh069-20",
+    asin: "B07CJ2RWFQ",
+    overview: "Shatterproof Christmas ball ornaments in rich emerald green. Perfect for families with kids or pets. Set of 24 covers a full tree.",
+    verdict: "#1 Best Seller in Christmas Ball Ornaments. Can't go wrong.",
+    pros: [
+      "#1 Best Seller in Christmas Ball Ornaments",
+      "Shatterproof - safe for kids and pets",
+      "13,000+ reviews",
+      "24-piece set covers full tree",
+      "Under $14"
+    ],
+    cons: [
+      "Green only (other colors available separately)",
+      "2.5\" size only"
+    ],
+    specs: {
+      "Quantity": "24 pieces",
+      "Size": "2.5 inches",
+      "Material": "Shatterproof plastic",
+      "Color": "Emerald Green"
+    },
+    featured: true
+  },
+  {
+    slug: "gingerbread-man-ornaments-12pc",
+    title: "Gingerbread Man Ornaments for Christmas Tree - 12pcs Assorted",
+    category: "ornaments",
+    price: 7.99,
+    rating: 4.4,
+    reviewCount: 5997,
+    image: "https://m.media-amazon.com/images/I/81D0ORKm3mL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B08HYRFP6W?tag=nsh069-20",
+    asin: "B08HYRFP6W",
+    overview: "Adorable 3-inch gingerbread man figurine ornaments. Assorted designs including candy, chef, and sports themes. Kids love these.",
+    verdict: "#1 Best Seller in Figurine Ornaments. Adorable and affordable.",
+    pros: [
+      "#1 Best Seller in Christmas Figurine Ornaments",
+      "12 assorted designs",
+      "Kids love them",
+      "Under $8"
+    ],
+    cons: [
+      "Lightweight - hang carefully",
+      "3 inches may be small for large trees"
+    ],
+    specs: {
+      "Quantity": "12 pieces",
+      "Size": "3 inches",
+      "Styles": "Assorted gingerbread designs"
+    },
+    featured: true
+  },
+
+  // OUTDOOR - VERIFIED 2026-02-08
+  {
+    slug: "zpisf-gingerbread-man-inflatable-6ft",
+    title: "ZPISF 6 FT Christmas Inflatable Gingerbread Man in Hot Cocoa Mug",
+    category: "outdoor",
+    price: 44.99,
+    rating: 4.5,
+    reviewCount: 862,
+    image: "https://m.media-amazon.com/images/I/71qvxGOlf6L._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B0BDR4NJP2?tag=nsh069-20",
+    asin: "B0BDR4NJP2",
+    overview: "Adorable 6-foot inflatable gingerbread man sitting in a hot cocoa mug. Built-in LED lights for nighttime display. Self-inflating with stakes included.",
+    verdict: "Unique yard decoration that stands out from typical Santas and snowmen.",
+    pros: [
+      "Unique gingerbread/hot cocoa design",
+      "Built-in LED lights",
+      "Self-inflating",
+      "Stakes and tethers included"
+    ],
+    cons: [
+      "Needs outdoor outlet",
+      "Must deflate for storage"
+    ],
+    specs: {
+      "Height": "6 feet",
+      "Lighting": "Built-in LEDs",
+      "Power": "Electric (plug-in)",
+      "Includes": "Stakes, tethers"
+    },
+    featured: true
+  },
+  {
+    slug: "funfanso-snowman-inflatable-7ft",
+    title: "FunFanso 7 FT Christmas Inflatables Snowman with Magic Hat LED",
+    category: "outdoor",
+    price: 39.99,
+    rating: 4.6,
+    reviewCount: 1744,
+    image: "https://m.media-amazon.com/images/I/71QKL8g4s5L._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B093SZ8NM9?tag=nsh069-20",
+    asin: "B093SZ8NM9",
+    overview: "Classic 7-foot snowman with magic hat, bright LED lights, and weatherproof construction. A holiday favorite that kids and neighbors will love.",
+    verdict: "Best value giant inflatable. 1,700+ reviews can't be wrong.",
+    pros: [
+      "7 feet tall - impressive size",
+      "Bright LED lights",
+      "Weatherproof",
+      "1,700+ reviews",
+      "Under $40"
+    ],
+    cons: [
+      "Requires flat yard space",
+      "Fan runs continuously"
+    ],
+    specs: {
+      "Height": "7 feet",
+      "Lighting": "Bright LEDs",
+      "Material": "Weatherproof nylon",
+      "Power": "Electric fan (included)"
+    },
+    featured: true
+  },
+
   // STORAGE - VERIFIED 2026-02-08
   {
     slug: "zober-ornament-storage-128",
