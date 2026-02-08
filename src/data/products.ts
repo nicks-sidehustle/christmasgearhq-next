@@ -1,6 +1,6 @@
 // ChristmasGearHQ Products
-// Real products with Amazon affiliate links
-// TODO: Update images with real Amazon product images
+// Real products with verified Amazon ASINs and images
+// Updated: 2026-02-08
 
 export interface Product {
   slug: string;
@@ -20,278 +20,313 @@ export interface Product {
   featured: boolean;
 }
 
-// Use verified Krinner image and placeholders for others until we get real URLs
 export const products: Product[] = [
+  // TREE STANDS
   {
-    slug: "krinner-tree-genie-xxl-christmas-tree-stand",
-    title: "Krinner Tree Genie XXL Deluxe Christmas Tree Stand",
+    slug: "krinner-tree-genie-xxl",
+    title: "Krinner Christmas Tree Genie XXL - Green Tree Stand",
     category: "tree-stands",
-    price: 145.99,
+    price: 89.99,
     rating: 4.6,
-    reviewCount: 10933,
-    image: "https://m.media-amazon.com/images/I/71RWqiEssPL._AC_SX679_.jpg",
-    amazonLink: "https://www.amazon.com/dp/B000CCSXH8?tag=nsh069-20",
-    asin: "B000CCSXH8",
-    overview: "The Krinner Tree Genie XXL Deluxe is widely considered the best Christmas tree stand available. Its unique foot-pedal clamping mechanism lets you set up a tree single-handedly—no crawling under the tree to tighten bolts. Wirecutter's top pick for years. German-engineered quality.",
-    verdict: "Worth every penny. The one-person setup alone justifies the premium price, and it'll last decades. Buy it once, never think about tree stands again.",
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/61qnYkHyHOL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B000XRQUSQ?tag=nsh069-20",
+    asin: "B000XRQUSQ",
+    overview: "The Krinner Tree Genie XXL is the original single cable operation tree stand. One person can set up a tree using the foot pedal—no crawling under the tree required. German-engineered quality that lasts decades.",
+    verdict: "The gold standard for tree stands. Worth every penny for the one-person setup alone.",
     pros: [
-      "One-person setup with foot pedal—no helper needed",
-      "Incredibly stable even with 12ft trees",
-      "2.5-gallon reservoir with water level indicator",
-      "Handles trunk diameters from 1 to 7 inches",
-      "German engineering—built to last generations"
+      "One-person setup with foot pedal",
+      "Holds trees up to 12 feet",
+      "Large water reservoir with level indicator",
+      "German engineering—built to last"
     ],
     cons: [
-      "Premium price point ($145+)",
-      "Narrow watering opening requires careful pouring",
-      "Heavy (18 lbs) though that adds stability"
+      "Premium price point",
+      "Heavy at 13 lbs"
     ],
     specs: {
       "Max Tree Height": "12 feet",
-      "Trunk Diameter Range": "1-7 inches",
-      "Water Capacity": "2.5 gallons",
-      "Stand Weight": "18 lbs",
-      "Material": "Steel and heavy-duty plastic"
+      "Trunk Diameter": "1-6 inches",
+      "Water Capacity": "1.3 gallons",
+      "Weight": "13 lbs"
     },
     featured: true
   },
   {
-    slug: "goliath-welded-steel-christmas-tree-stand",
-    title: "Goliath Welded Steel Christmas Tree Stand",
+    slug: "goliath-welded-steel-live-tree-stand",
+    title: "Goliath Welded Steel Christmas Tree Stand for Live Trees",
     category: "tree-stands",
-    price: 44.99,
+    price: 73.99,
     rating: 4.8,
-    reviewCount: 2000,
-    image: "https://placehold.co/600x600/2d5016/white?text=Tree+Stand",
-    amazonLink: "https://www.amazon.com/s?k=goliath+christmas+tree+stand&tag=nsh069-20",
-    asin: "B0B8N6JC7Q",
-    overview: "The Goliath Welded Steel stand handles Christmas trees from 4 to 8 feet tall. Heavy-duty welded steel construction provides rock-solid stability at a budget-friendly price point.",
-    verdict: "Best value for budget-conscious buyers. The welded steel construction is incredibly durable.",
+    reviewCount: 1700,
+    image: "https://m.media-amazon.com/images/I/717dSgbMtKL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B01N8VQ730?tag=nsh069-20",
+    asin: "B01N8VQ730",
+    overview: "Heavy-duty welded steel construction for live Christmas trees 5-12 feet tall. Traditional bolt design is rock-solid once set up. Great value for the build quality.",
+    verdict: "Best value for live trees. The welded steel construction is incredibly durable.",
     pros: [
-      "Heavy-duty welded steel construction",
-      "Budget-friendly price",
-      "Fits most standard trees 4-8 feet"
+      "Heavy-duty welded steel",
+      "Handles trees up to 12 feet",
+      "1.5-gallon water reservoir",
+      "Excellent price for quality"
     ],
     cons: [
       "Requires two people for setup",
-      "Traditional bolt-tightening method",
-      "Smaller water capacity"
+      "Traditional bolt-tightening method"
     ],
     specs: {
-      "Max Tree Height": "8 feet",
-      "Trunk Diameter": "Up to 5 inches",
+      "Max Tree Height": "12 feet",
+      "Trunk Diameter": "Up to 6 inches",
+      "Water Capacity": "1.5 gallons",
       "Material": "Welded steel"
     },
-    featured: false
+    featured: true
   },
+
+  // LIGHTS
   {
-    slug: "twinkle-star-christmas-string-lights",
-    title: "Twinkle Star 200 LED Christmas String Lights (66ft)",
+    slug: "outdoor-multicolor-string-lights-50ft",
+    title: "50Ft Outdoor Multicolor String Lights, LED Dimmable",
     category: "lights",
-    price: 15.99,
-    rating: 4.4,
-    reviewCount: 3700,
-    image: "https://placehold.co/600x600/1e3a5f/white?text=String+Lights",
-    amazonLink: "https://www.amazon.com/s?k=christmas+string+lights+66ft+led&tag=nsh069-20",
-    asin: "B07FSLWPRB",
-    overview: "These versatile LED string lights work for both indoor and outdoor use with 8 lighting modes. The warm white glow creates a classic Christmas ambiance, and the 66-foot length covers a large tree or outdoor area easily.",
-    verdict: "Excellent budget lights that look way more expensive than they are. The multiple modes and weatherproof design make them versatile.",
+    price: 24.99,
+    rating: 4.5,
+    reviewCount: 3200,
+    image: "https://m.media-amazon.com/images/I/71cHI4kJKOL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B0DY1GT2M5?tag=nsh069-20",
+    asin: "B0DY1GT2M5",
+    overview: "Dimmable multicolor LED string lights perfect for outdoor Christmas decorations. 50 feet of coverage with shatterproof bulbs and weatherproof construction.",
+    verdict: "Great outdoor lights with dimming capability. The multicolor option adds festive variety.",
     pros: [
-      "8 lighting modes",
-      "Waterproof for outdoor use",
-      "66 feet covers large trees easily",
-      "Memory function",
-      "Low energy LED bulbs"
+      "Dimmable brightness control",
+      "Shatterproof LED bulbs",
+      "Weatherproof for outdoor use",
+      "50 feet of coverage"
     ],
     cons: [
-      "Plug-in only (no battery option)",
-      "Green wire visible on white trees"
+      "Requires outdoor outlet",
+      "Controller can be bulky"
     ],
     specs: {
-      "Length": "66 feet",
-      "LED Count": "200",
-      "Modes": "8 lighting modes",
-      "Power": "Plug-in",
-      "Indoor/Outdoor": "Both"
+      "Length": "50 feet",
+      "Bulb Type": "LED",
+      "Colors": "Multicolor",
+      "Weather Rating": "Weatherproof"
     },
     featured: true
   },
   {
-    slug: "home-lighting-christmas-mini-lights",
-    title: "Home Lighting 66ft Christmas Decorative Mini Lights",
+    slug: "christmas-tree-lights-100-led",
+    title: "100 LED Christmas Lights 33ft with 8 Modes",
     category: "lights",
     price: 16.99,
     rating: 4.6,
-    reviewCount: 16300,
-    image: "https://placehold.co/600x600/1e3a5f/white?text=Mini+Lights",
-    amazonLink: "https://www.amazon.com/s?k=christmas+mini+lights+66ft&tag=nsh069-20",
-    asin: "B0CKGWQ7JX",
-    overview: "Green wire fairy lights perfect for wrapping around trees, bushes, and outdoor decorations. 200 LED bulbs in warm white with 8 modes. Highly rated with over 16,000 reviews.",
-    verdict: "Best-seller for good reason. These lights look beautiful and have excellent longevity based on reviews.",
+    reviewCount: 4500,
+    image: "https://m.media-amazon.com/images/I/81f6XNz4ZBL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B0CQK1KCHY?tag=nsh069-20",
+    asin: "B0CQK1KCHY",
+    overview: "Classic Christmas tree lights with 8 lighting modes including steady on and various twinkle patterns. Memory function remembers your last setting. Green wire blends with tree branches.",
+    verdict: "Excellent budget lights with all the features you need. Great for indoor trees.",
     pros: [
       "8 lighting modes",
-      "Green wire blends with greenery",
-      "16,000+ positive reviews",
-      "UL certified"
+      "Memory function",
+      "Green wire blends with trees",
+      "Budget-friendly price"
     ],
     cons: [
-      "Warm white only (no multicolor)",
-      "Plug-in required"
+      "33 feet may not cover large trees",
+      "Plug-in only"
     ],
     specs: {
-      "Length": "66 feet",
-      "LED Count": "200",
+      "Length": "33 feet",
+      "LED Count": "100",
       "Modes": "8 lighting modes",
       "Wire Color": "Green"
     },
     featured: true
   },
+
+  // STORAGE
   {
-    slug: "santas-bags-christmas-tree-storage",
-    title: "Santa's Bags Upright Christmas Tree Storage Bag",
+    slug: "zober-ornament-storage-128",
+    title: "ZOBER Large Christmas Ornament Storage Box - Stores 128",
     category: "storage",
-    price: 49.99,
-    rating: 4.4,
+    price: 29.99,
+    rating: 4.6,
     reviewCount: 12000,
-    image: "https://placehold.co/600x600/8B0000/white?text=Tree+Storage",
-    amazonLink: "https://www.amazon.com/s?k=santa+bags+upright+tree+storage&tag=nsh069-20",
-    asin: "B001FA1O2O",
-    overview: "Store your artificial Christmas tree upright in this heavy-duty bag—no disassembly required. Rolling base and handles make it easy to move to storage.",
-    verdict: "A game-changer if you have storage space for upright trees. Saves hours of assembly time each year.",
+    image: "https://m.media-amazon.com/images/I/915XlluKPGL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B07RN12RSL?tag=nsh069-20",
+    asin: "B07RN12RSL",
+    overview: "Store up to 128 standard 3-inch ornaments in this durable fabric storage box. Adjustable dividers protect delicate decorations. Sturdy handles and reinforced construction.",
+    verdict: "The go-to ornament storage for serious collectors. Adjustable dividers are key.",
     pros: [
-      "Store tree assembled—saves setup time",
-      "Rolling wheels for easy transport",
-      "Heavy-duty material",
-      "Multiple size options"
+      "Holds 128 ornaments",
+      "Adjustable dividers",
+      "Durable fabric construction",
+      "Sturdy handles"
     ],
     cons: [
-      "Requires vertical storage space",
-      "Premium price for a storage bag"
+      "Only fits 3-inch ornaments",
+      "Dividers can shift"
     ],
     specs: {
-      "Fits Trees Up To": "9 feet",
-      "Material": "Heavy-duty polyester",
-      "Wheels": "Yes, rolling base"
+      "Capacity": "128 ornaments",
+      "Ornament Size": "3 inches",
+      "Material": "600D Oxford fabric",
+      "Dimensions": "26 x 13 x 13 inches"
     },
     featured: true
   },
   {
-    slug: "ornament-storage-box-dividers",
-    title: "Premium Ornament Storage Box with Adjustable Dividers",
+    slug: "zober-ornament-storage-64",
+    title: "Zober Christmas Ornament Storage Box - Stores 64",
     category: "storage",
-    price: 24.99,
-    rating: 4.6,
+    price: 19.99,
+    rating: 4.5,
     reviewCount: 8500,
-    image: "https://placehold.co/600x600/8B0000/white?text=Ornament+Box",
-    amazonLink: "https://www.amazon.com/s?k=ornament+storage+box+dividers&tag=nsh069-20",
-    asin: "B000QSTPOG",
-    overview: "Sturdy ornament storage box with adjustable dividers to customize compartments for different sizes. Clear lid lets you see contents without opening.",
-    verdict: "Essential for anyone with a serious ornament collection. The adjustable dividers adapt as your collection grows.",
+    image: "https://m.media-amazon.com/images/I/815hr77CPZL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B016YUEHJ4?tag=nsh069-20",
+    asin: "B016YUEHJ4",
+    overview: "Compact ornament storage for smaller collections. Holds 64 ornaments with the same quality construction as the larger version. Perfect for apartments or starter collections.",
+    verdict: "Great entry-level storage. Same quality, smaller size.",
     pros: [
-      "Adjustable dividers",
-      "Clear lid for identification",
-      "Stackable design",
-      "Protects delicate ornaments"
+      "Compact size",
+      "Same quality as larger version",
+      "Good for apartments",
+      "Budget-friendly"
     ],
     cons: [
-      "Dividers can shift during transport",
-      "Doesn't fit extra-large ornaments"
+      "Limited to 64 ornaments",
+      "Only fits 3-inch ornaments"
     ],
     specs: {
-      "Capacity": "64 quarts",
-      "Material": "Durable plastic",
-      "Dividers": "Adjustable"
+      "Capacity": "64 ornaments",
+      "Ornament Size": "3 inches",
+      "Material": "600D Oxford fabric"
     },
     featured: false
   },
+
+  // OUTDOOR
   {
-    slug: "gemmy-inflatable-santa-sleigh",
-    title: "Gemmy 12ft Airblown Inflatable Santa with Sleigh",
+    slug: "inflatable-snowman-polar-bear-10ft",
+    title: "10FT Inflatable Christmas Snowman with Polar Bear",
     category: "outdoor",
-    price: 149.99,
-    rating: 4.3,
+    price: 89.99,
+    rating: 4.4,
     reviewCount: 2800,
-    image: "https://placehold.co/600x600/c41e3a/white?text=Santa+Inflatable",
-    amazonLink: "https://www.amazon.com/s?k=gemmy+inflatable+santa+sleigh+12ft&tag=nsh069-20",
-    asin: "B0B4YZNTC5",
-    overview: "This massive 12-foot Santa and sleigh inflatable makes a statement in any yard. Self-inflating with internal lights for nighttime visibility.",
-    verdict: "The showstopper for outdoor displays. Kids love it, neighbors will notice.",
+    image: "https://m.media-amazon.com/images/I/71eGuMj0lcL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B0B2JHFKQT?tag=nsh069-20",
+    asin: "B0B2JHFKQT",
+    overview: "Massive 10-foot inflatable featuring a snowman with polar bear. Self-inflating with built-in LED lights for nighttime display. Stakes and tethers included.",
+    verdict: "A showstopper for any yard. Kids love it!",
     pros: [
-      "Impressive 12-foot size",
-      "Self-inflating",
-      "Internal LED lights",
+      "Impressive 10-foot height",
+      "Self-inflating with fan",
+      "Built-in LED lights",
       "Stakes and tethers included"
     ],
     cons: [
       "Requires outdoor outlet",
-      "Must deflate in bad weather",
-      "Uses electricity while running"
+      "Must deflate in bad weather"
     ],
     specs: {
-      "Size": "12 feet long",
+      "Height": "10 feet",
       "Setup": "Self-inflating",
-      "Lighting": "Internal LED"
+      "Lighting": "Built-in LED",
+      "Power": "Plug-in"
     },
     featured: true
   },
   {
-    slug: "christmas-projector-lights-snow",
-    title: "Christmas Projector Lights - Snow Falling LED",
+    slug: "joiedomi-christmas-inflatable-tree",
+    title: "Joiedomi 7FT Christmas Inflatable Tree Outdoor",
     category: "outdoor",
-    price: 32.99,
-    rating: 4.4,
-    reviewCount: 15000,
-    image: "https://placehold.co/600x600/1e3a5f/white?text=Snow+Projector",
-    amazonLink: "https://www.amazon.com/s?k=christmas+projector+snow+lights&tag=nsh069-20",
-    asin: "B07YMTBNVN",
-    overview: "Project a magical snowfall effect onto your house or trees without the mess of real snow. Waterproof design works in all weather with timer function.",
-    verdict: "Maximum impact for minimal effort. The snow effect is surprisingly realistic.",
+    price: 49.99,
+    rating: 4.5,
+    reviewCount: 1500,
+    image: "https://m.media-amazon.com/images/I/91yHAT0gwKL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B07JPZXHJQ?tag=nsh069-20",
+    asin: "B07JPZXHJQ",
+    overview: "Giant 7-foot inflatable Christmas tree perfect for front yards. Self-inflating design sets up in seconds. Built-in lights create a festive glow at night.",
+    verdict: "Great size for most yards without being overwhelming. Easy setup.",
     pros: [
-      "Covers large area (up to 40ft)",
-      "Realistic snow-falling effect",
-      "Waterproof",
-      "Timer function"
+      "7-foot size—big but manageable",
+      "Quick self-inflating setup",
+      "Built-in lights",
+      "Good value"
     ],
     cons: [
-      "Needs outdoor outlet",
-      "Better at night"
+      "Needs electricity while running",
+      "Not as impressive as 10ft+ options"
     ],
     specs: {
-      "Projection Distance": "Up to 40 feet",
-      "Weather Rating": "IP65 Waterproof",
-      "Timer": "6 hours on/18 off"
+      "Height": "7 feet",
+      "Setup": "Self-inflating",
+      "Lighting": "Built-in LED",
+      "Power": "Plug-in"
     },
     featured: false
   },
+
+  // ORNAMENTS/WREATHS
   {
-    slug: "pre-lit-christmas-wreath-48-inch",
-    title: "National Tree 48-Inch Pre-Lit Christmas Wreath",
+    slug: "pre-lit-christmas-wreath-48in",
+    title: "Best Choice Products 48in Pre-Lit Fir Christmas Wreath",
     category: "ornaments",
     price: 89.99,
     rating: 4.5,
-    reviewCount: 3500,
-    image: "https://placehold.co/600x600/2d5016/white?text=Wreath+48in",
-    amazonLink: "https://www.amazon.com/s?k=pre+lit+christmas+wreath+48+inch&tag=nsh069-20",
-    asin: "B00HDZZ3UW",
-    overview: "This substantial 48-inch wreath makes a grand statement on any front door. Pre-lit with warm white LEDs and decorated with pine cones and berries.",
-    verdict: "If you want a wreath that impresses, this is it. Pre-lit convenience and quality construction.",
+    reviewCount: 3200,
+    image: "https://m.media-amazon.com/images/I/91ClWLpPXzL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B0CGCRGKLT?tag=nsh069-20",
+    asin: "B0CGCRGKLT",
+    overview: "Impressive 48-inch pre-lit Christmas wreath with warm white LED lights. Realistic fir branches with pine cones and berries. Battery or plug-in power options.",
+    verdict: "Makes a statement on any door. The 48-inch size is impressive.",
     pros: [
-      "Impressive 48-inch diameter",
-      "Pre-lit with 200 LEDs",
-      "Realistic mixed greenery",
-      "Battery or plug-in power"
+      "Large 48-inch diameter",
+      "Pre-lit with LEDs",
+      "Realistic fir with pine cones",
+      "Battery or plug-in options"
     ],
     cons: [
-      "May overwhelm smaller doors",
-      "Premium price",
+      "May be too large for some doors",
       "Heavy—needs sturdy hook"
     ],
     specs: {
       "Diameter": "48 inches",
-      "Lights": "200 warm white LEDs",
-      "Power": "Battery or plug-in"
+      "Lights": "Warm white LED",
+      "Power": "Battery or plug-in",
+      "Decorations": "Pine cones, berries"
     },
     featured: true
+  },
+  {
+    slug: "pre-lit-christmas-wreath-36in",
+    title: "Best Choice Products 36in Pre-Lit Fir Christmas Wreath",
+    category: "ornaments",
+    price: 59.99,
+    rating: 4.5,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/91DNY-YkoGL._AC_SL1500_.jpg",
+    amazonLink: "https://www.amazon.com/dp/B0DHSWHCQZ?tag=nsh069-20",
+    asin: "B0DHSWHCQZ",
+    overview: "Classic 36-inch pre-lit wreath—the perfect size for most front doors. Same quality as the 48-inch version in a more manageable size.",
+    verdict: "The sweet spot for most homes. Great quality at a reasonable price.",
+    pros: [
+      "Perfect 36-inch size for most doors",
+      "Pre-lit with LEDs",
+      "Realistic fir branches",
+      "More affordable than 48-inch"
+    ],
+    cons: [
+      "Less impressive than larger sizes",
+      "Limited decoration options"
+    ],
+    specs: {
+      "Diameter": "36 inches",
+      "Lights": "Warm white LED",
+      "Power": "Battery or plug-in"
+    },
+    featured: false
   }
 ];
 
