@@ -24,7 +24,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-08',
     readTime: '12 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81s2FhLsURL._AC_SX569_.jpg',
+    image: 'https://m.media-amazon.com/images/I/71RWqiEssPL._AC_SX679_.jpg',
   },
   {
     slug: 'best-christmas-lights-2026',
@@ -36,7 +36,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-08',
     readTime: '10 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81OqfPY7F3L._AC_SX569_.jpg',
+    image: 'https://placehold.co/600x400/1e3a5f/white?text=Christmas+Lights+Guide',
   },
   {
     slug: 'best-christmas-storage-solutions-2026',
@@ -48,7 +48,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-08',
     readTime: '8 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/71EF5c2sYQL._AC_SX569_.jpg',
+    image: 'https://placehold.co/600x400/8B0000/white?text=Storage+Guide',
   },
 ];
 
