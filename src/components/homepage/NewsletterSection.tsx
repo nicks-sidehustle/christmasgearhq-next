@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, CheckCircle, Loader2 } from "lucide-react";
+import { Gift, CheckCircle, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { siteConfig } from "@/config/site";
 
 export function NewsletterSection() {
   const [email, setEmail] = useState("");
@@ -21,14 +20,14 @@ export function NewsletterSection() {
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "christmasgearhq" }),
+        body: JSON.stringify({ email, source: "homepage" }),
       });
 
       const data = await response.json();
 
       if (response.ok) {
         setStatus("success");
-        setMessage("You're in! Check your inbox for a welcome email.");
+        setMessage("🎁 You're in! Check your inbox to confirm & enter the giveaway.");
         setEmail("");
       } else {
         setStatus("error");
@@ -41,18 +40,24 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="py-12 bg-red-600">
-      <div className="container mx-auto px-4 max-w-xl text-center">
-        <Mail className="w-10 h-10 text-red-200 mx-auto mb-4" />
+    <section className="py-12 bg-gradient-to-r from-red-600 via-red-500 to-green-600 relative overflow-hidden">
+      {/* Decorative snowflakes */}
+      <div className="absolute top-4 left-8 text-3xl opacity-20">❄️</div>
+      <div className="absolute top-6 right-12 text-2xl opacity-20">❄️</div>
+      <div className="absolute bottom-4 left-20 text-xl opacity-20">❄️</div>
+      <div className="absolute bottom-6 right-24 text-2xl opacity-20">❄️</div>
+      
+      <div className="container mx-auto px-4 max-w-xl text-center relative z-10">
+        <Gift className="w-10 h-10 text-yellow-200 mx-auto mb-4" />
         <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
-          Get Holiday Deals & Tips 🎄
+          Subscribe & Enter Our Holiday Giveaway! 🎄
         </h2>
         <p className="text-red-100 mb-6">
-          Weekly roundup of best decorations, price drops, and seasonal tips. No spam.
+          Get weekly deals, decorating tips, and be automatically entered to win holiday prizes!
         </p>
 
         {status === "success" ? (
-          <div className="flex items-center justify-center gap-2 text-white">
+          <div className="flex items-center justify-center gap-2 text-white bg-green-600/50 rounded-lg p-4">
             <CheckCircle className="w-5 h-5" />
             <span>{message}</span>
           </div>
@@ -69,12 +74,12 @@ export function NewsletterSection() {
             <Button
               type="submit"
               disabled={status === "loading"}
-              className="h-11 bg-white text-red-600 hover:bg-red-50 font-medium"
+              className="h-11 bg-white text-red-600 hover:bg-yellow-100 font-medium"
             >
               {status === "loading" ? (
                 <Loader2 className="w-4 h-4 animate-spin" />
               ) : (
-                "Subscribe"
+                "🎅 Enter Now"
               )}
             </Button>
           </form>
@@ -85,7 +90,7 @@ export function NewsletterSection() {
         )}
 
         <p className="text-xs text-red-200 mt-4">
-          Join holiday decorating enthusiasts
+          🔒 No spam, ever. Winners announced monthly!
         </p>
       </div>
     </section>

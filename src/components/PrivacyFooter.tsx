@@ -54,7 +54,7 @@ export function PrivacyFooter() {
           </div>
           
           <div className="text-sm text-gray-500 text-center md:text-right">
-            <p>© {new Date().getFullYear()} Smart Home Explorer. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} ChristmasGearHQ. All rights reserved.</p>
             <p className="text-xs mt-1">
               Amazon Associate - We earn from qualifying purchases
             </p>

@@ -21,33 +21,33 @@ export function NewsletterModal({ isOpen, onClose }: NewsletterModalProps) {
     e.preventDefault();
     
     if (!email) {
-      toast.error("Whoa there! We need your email to spam you... I mean, inform you! 📬");
+      toast.error("We need your email to enter you in the giveaway! 🎁");
       return;
     }
 
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/newsletter", {
+      const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, name }),
+        body: JSON.stringify({ email, name, source: "modal" }),
       });
 
       if (response.ok) {
-        toast.success("Successfully subscribed to newsletter!");
+        toast.success("🎄 You're in! Check your inbox for holiday deals.");
         setEmail("");
         setName("");
         onClose();
       } else {
         const error = await response.json();
-        toast.error(error.message || "The internet gremlins ate your submission! Try again? 🐛");
+        toast.error(error.message || "Something went wrong! Try again? 🎅");
       }
     } catch (error) {
       console.error("Newsletter subscription error:", error);
-      toast.error("Our hamsters stopped running the servers! Give us a sec... 🐹");
+      toast.error("Connection error! Give us a sec... ❄️");
     } finally {
       setIsLoading(false);
     }
@@ -58,13 +58,13 @@ export function NewsletterModal({ isOpen, onClose }: NewsletterModalProps) {
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold">
-            📧 Subscribe to Smart Home Explorer
+            🎄 Subscribe & Enter Our Holiday Giveaway!
           </DialogTitle>
         </DialogHeader>
         
         <div className="space-y-4">
           <p className="text-muted-foreground">
-            Get the latest smart home reviews and exclusive deals delivered straight to your inbox.
+            Get the best Christmas decoration deals, expert tips, and be automatically entered to win holiday prizes! 🎁
           </p>
           
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -93,10 +93,10 @@ export function NewsletterModal({ isOpen, onClose }: NewsletterModalProps) {
             <div className="flex gap-2">
               <Button 
                 type="submit" 
-                className="flex-1"
+                className="flex-1 bg-red-600 hover:bg-red-700"
                 disabled={isLoading}
               >
-                {isLoading ? "Subscribing..." : "Subscribe"}
+                {isLoading ? "Subscribing..." : "🎅 Enter Giveaway"}
               </Button>
               <Button 
                 type="button" 
@@ -110,7 +110,7 @@ export function NewsletterModal({ isOpen, onClose }: NewsletterModalProps) {
           </form>
           
           <p className="text-xs text-muted-foreground">
-            We respect your privacy. Unsubscribe at any time.
+            🔒 We respect your privacy. Unsubscribe anytime. Winners announced monthly!
           </p>
         </div>
       </DialogContent>
