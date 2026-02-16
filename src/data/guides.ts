@@ -134,7 +134,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-16',
     readTime: '10 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81qH5vQlPEL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/81QsMl3-BkL._AC_SX679_.jpg',
   },
   {
     slug: 'best-holiday-baking-supplies-2026',
@@ -146,7 +146,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-16',
     readTime: '11 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/71ZbvQw8NHL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/717dSgbMtKL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-cozy-home-gifts-2026',
@@ -158,7 +158,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-16',
     readTime: '12 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/91JY9oN2V9L._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/71wLxBduTgL._AC_SL1500_.jpg',
   },
 ];
 
