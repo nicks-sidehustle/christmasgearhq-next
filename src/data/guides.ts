@@ -62,7 +62,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-14',
     readTime: '11 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/61MHZU-sTdL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/81bToCVvjIL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-christmas-ornaments-2026',
@@ -74,7 +74,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-14',
     readTime: '9 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81J6k4BzjXL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/717dSgbMtKL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-stocking-stuffers-2026',
@@ -86,7 +86,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-14',
     readTime: '8 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/71NkYwQJS3L._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/81QsMl3-BkL._AC_SX679_.jpg',
   },
   {
     slug: 'best-christmas-decorations-2026',
@@ -98,7 +98,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-15',
     readTime: '11 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81J7xQKR3bL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/71wLxBduTgL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-artificial-christmas-trees-2026',
@@ -110,7 +110,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-15',
     readTime: '12 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81QoHvlhORL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/81B2iP45DVL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-christmas-gifts-for-kids-2026',
@@ -122,7 +122,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-15',
     readTime: '13 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/71h4xTl5IaL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/71xbV4VsKIL._AC_SL1500_.jpg',
   },
 ];
 
