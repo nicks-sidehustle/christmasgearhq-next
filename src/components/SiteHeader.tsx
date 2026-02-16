@@ -51,9 +51,9 @@ export function SiteHeader() {
               alt={siteConfig.name}
               width={36}
               height={36}
-              className="w-9 h-9"
+              className="w-8 h-8 sm:w-9 sm:h-9"
             />
-            <span className="font-bold text-lg text-gray-900 hidden sm:block">
+            <span className="font-bold text-base sm:text-lg text-gray-900">
               {siteConfig.name}
             </span>
           </Link>
