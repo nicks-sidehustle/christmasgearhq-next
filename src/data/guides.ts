@@ -170,7 +170,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-17',
     readTime: '13 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/81QvOLXJMkL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/915XlluKPGL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-outdoor-christmas-decorations-2026',
@@ -182,7 +182,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-17',
     readTime: '12 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/71BxJ8HQZXL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/71cHI4kJKOL._AC_SL1500_.jpg',
   },
   {
     slug: 'best-christmas-gifts-for-parents-2026',
@@ -194,7 +194,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-02-17',
     readTime: '14 min read',
     featured: true,
-    image: 'https://m.media-amazon.com/images/I/71VqZ7NQWOL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/I/81bToCVvjIL._AC_SL1500_.jpg',
   },
 ];
 
