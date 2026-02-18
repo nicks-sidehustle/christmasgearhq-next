@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { siteConfig } from "@/config/site";
 
 const GA_MEASUREMENT_ID = "G-R9R6P7KVVE";
@@ -59,6 +60,13 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         {children}
+        <ExitIntentPopup
+          siteName="ChristmasGearHQ"
+          headline="🎄 Wait! Don't Miss the Best Deals"
+          description="Get gift guides, holiday deals, and festive decor tips delivered to your inbox."
+          buttonText="Subscribe Free"
+          accentColor="#dc2626"
+        />
         <Footer />
       </body>
     </html>
