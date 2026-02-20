@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BookOpen, ArrowRight } from "lucide-react";
-import { Guide } from "@/data/guides";
+import { Guide } from "@/lib/guides";
 
 interface GuidesSectionProps {
   guides: Guide[];
