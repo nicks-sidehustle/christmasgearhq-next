@@ -5,7 +5,7 @@ import { CategoryBrowse } from "@/components/homepage/CategoryBrowse";
 import { GuidesSection } from "@/components/homepage/GuidesSection";
 import { NewsletterSection } from "@/components/homepage/NewsletterSection";
 import { getFeaturedProducts, getProductsByCategory } from "@/lib/content/products";
-import { getFeaturedGuides } from "@/data/guides";
+import { getFeaturedGuides } from "@/lib/guides";
 import { categories, siteConfig } from "@/config/site";
 import { Suspense } from "react";
 

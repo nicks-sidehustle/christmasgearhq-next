@@ -54,6 +54,7 @@
     "googleapis": "^144.0.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.536.0",
+    "marked": "^17.0.3",
     "next": "^16.1.6",
     "openai": "^5.11.0",
     "react": "19.1.0",
