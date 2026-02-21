@@ -155,7 +155,7 @@ export const products: Product[] = [
     price: 13.97,
     rating: 4.2,
     reviewCount: 13081,
-    image: "https://images.unsplash.com/photo-1513297887119-d46091b24bfb?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=600&q=80",
     amazonLink: "https://www.amazon.com/dp/B07CJ2RWFQ?tag=nsh069-20",
     asin: "B07CJ2RWFQ",
     overview: "Shatterproof Christmas ball ornaments in rich emerald green. Perfect for families with kids or pets. Set of 24 covers a full tree.",
