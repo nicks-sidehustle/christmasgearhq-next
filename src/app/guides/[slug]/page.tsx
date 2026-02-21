@@ -1,5 +1,5 @@
 import { SiteHeader } from "@/components/SiteHeader";
-import { guides, getGuideBySlug, getGuideContent } from "@/data/guides";
+import { getAllGuides, getGuideBySlug } from "@/lib/guides";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,6 +12,7 @@ interface GuidePageProps {
 }
 
 export async function generateStaticParams() {
+  const guides = getAllGuides();
   return guides.map((guide) => ({
     slug: guide.slug,
   }));
@@ -34,9 +35,8 @@ export async function generateMetadata({ params }: GuidePageProps) {
 export default async function GuidePage({ params }: GuidePageProps) {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
-  const content = getGuideContent(slug);
 
-  if (!guide || !content) {
+  if (!guide) {
     notFound();
   }
 
@@ -68,7 +68,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
             <div className="flex items-center gap-4 text-sm text-gray-500">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                Updated {guide.updatedDate}
+                Updated {String(guide.updatedDate)}
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
@@ -79,11 +79,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
 
           {/* Featured Image */}
           <div className="relative h-64 sm:h-80 bg-gray-100 rounded-xl mb-8 overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={guide.image}
+            <Image
+              src={guide.image || 'https://images.unsplash.com/photo-1512389098783-66b81f86e199?w=800&q=80'}
               alt={guide.title}
-              className="w-full h-full object-contain p-8"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
             />
           </div>
 
@@ -132,7 +133,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 ),
               }}
             >
-              {content}
+              {guide.content}
             </ReactMarkdown>
           </div>
 

@@ -7,7 +7,7 @@ publishDate: 2026-02-08
 updatedDate: 2026-02-08
 readTime: 10 min read
 featured: true
-image: https://m.media-amazon.com/images/I/71cHI4kJKOL._AC_SL1500_.jpg
+image: https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80
 ---
 
 # Best Christmas Lights 2026 Indoor and Outdoor Options

@@ -2,8 +2,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, BookOpen } from "lucide-react";
-import { getAllGuides } from "@/data/guides";
-import { GuideThumbnail } from "@/components/GuideThumbnail";
+import { getAllGuides } from "@/lib/guides";
 
 import { siteConfig } from "@/config/site";
 
@@ -35,22 +34,13 @@ export default function GuidesPage() {
               <Link key={guide.slug} href={`/guides/${guide.slug}`}>
                 <article className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all h-full flex flex-col">
                   <div className="relative h-48 bg-gray-100">
-                    {guide.image && !guide.image.includes('placeholder') ? (
-                      <Image
-                        src={guide.image}
-                        alt={guide.title}
-                        fill
-                        className="object-contain p-6"
-                        sizes="(max-width: 640px) 100vw, 50vw"
-                      />
-                    ) : (
-                      <GuideThumbnail
-                        title={guide.title}
-                        slug={guide.slug}
-                        category={guide.category}
-                        className="w-full h-full"
-                      />
-                    )}
+                    <Image
+                      src={guide.image || 'https://images.unsplash.com/photo-1512389098783-66b81f86e199?w=800&q=80'}
+                      alt={guide.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
                   </div>
                   <div className="p-5 flex-1 flex flex-col">
                     <div className="flex items-center gap-2 mb-3">

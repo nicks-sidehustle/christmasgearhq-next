@@ -7,6 +7,7 @@ publishDate: 2026-02-08
 updatedDate: 2026-02-08
 readTime: 10 min read
 featured: true
+image: https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&q=80
 ---
 
 # Best Christmas Ornaments 2026

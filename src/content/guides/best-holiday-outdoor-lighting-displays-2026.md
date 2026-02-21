@@ -7,7 +7,7 @@ publishDate: 2026-02-21
 updatedDate: 2026-02-21
 readTime: 14 min read
 featured: true
-image: https://m.media-amazon.com/images/I/71LKM8kF7wL._AC_SL1500_.jpg
+image: https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80
 ---
 
 # Best Holiday Outdoor Lighting & Displays 2026 - Create Magical Curb Appeal

@@ -7,6 +7,7 @@ publishDate: 2026-02-08
 updatedDate: 2026-02-08
 readTime: 10 min read
 featured: true
+image: https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&q=80
 ---
 
 # Best Christmas Storage Solutions 2026
