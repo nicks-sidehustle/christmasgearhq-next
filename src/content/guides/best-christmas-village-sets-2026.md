@@ -7,7 +7,6 @@ publishDate: 2026-02-08
 updatedDate: 2026-02-08
 readTime: 10 min read
 featured: true
-image: https://via.placeholder.com/400x300
 ---
 
 # Best Christmas Village Sets 2026

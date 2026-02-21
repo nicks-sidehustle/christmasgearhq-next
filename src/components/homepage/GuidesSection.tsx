@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { Guide } from "@/lib/guides";
+import { GuideThumbnail } from "@/components/GuideThumbnail";
 
 interface GuidesSectionProps {
   guides: Guide[];
@@ -42,13 +43,22 @@ export function GuidesSection({ guides }: GuidesSectionProps) {
             <Link key={guide.slug} href={`/guides/${guide.slug}`}>
               <article className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all h-full flex flex-col">
                 <div className="relative h-40 bg-gray-100">
-                  <Image
-                    src={guide.image}
-                    alt={guide.title}
-                    fill
-                    className="object-contain p-4"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
+                  {guide.image && !guide.image.includes('placeholder') ? (
+                    <Image
+                      src={guide.image}
+                      alt={guide.title}
+                      fill
+                      className="object-contain p-4"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <GuideThumbnail
+                      title={guide.title}
+                      slug={guide.slug}
+                      category={guide.category}
+                      className="w-full h-full"
+                    />
+                  )}
                 </div>
                 <div className="p-4 flex-1 flex flex-col">
                   <div className="flex items-center gap-2 mb-2">
