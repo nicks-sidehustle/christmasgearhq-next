@@ -64,7 +64,10 @@ body {
 }
 
 :root {
-  --font-size: 14px;
+  --font-size: 16px;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
@@ -144,5 +147,27 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    min-font-size: 16px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), sans-serif;
+  }
+  
+  article, .prose {
+    line-height: 1.7;
+  }
+  
+  a {
+    color: var(--text-primary);
+    text-decoration-color: var(--text-muted);
+  }
+  
+  a:hover {
+    color: var(--text-secondary);
   }
 }

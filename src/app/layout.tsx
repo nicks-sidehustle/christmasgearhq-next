@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Nunito } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
@@ -7,7 +7,8 @@ import { siteConfig } from "@/config/site";
 
 const GA_MEASUREMENT_ID = "G-R9R6P7KVVE";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const nunito = Nunito({ subsets: ["latin"], variable: "--font-heading", weight: ["400", "600", "700", "800"] });
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +59,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
+      <body className={`${inter.variable} ${nunito.variable} font-sans bg-white text-slate-800 antialiased`}>
         {children}
         <ExitIntentPopup
           siteName="ChristmasGearHQ"

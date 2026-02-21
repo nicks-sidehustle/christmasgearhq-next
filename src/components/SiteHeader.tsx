@@ -45,17 +45,15 @@ export function SiteHeader() {
       <div className="container mx-auto px-4 py-3 max-w-4xl">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+          <Link href="/" className="flex items-center flex-shrink-0">
             <Image
               src="/logo.svg"
               alt={siteConfig.name}
-              width={36}
-              height={36}
-              className="w-8 h-8 sm:w-9 sm:h-9"
+              width={200}
+              height={60}
+              className="h-12 sm:h-14 md:h-16 w-auto"
+              priority
             />
-            <span className="font-bold text-base sm:text-lg text-gray-900">
-              {siteConfig.name}
-            </span>
           </Link>
 
           {/* Desktop Nav */}
